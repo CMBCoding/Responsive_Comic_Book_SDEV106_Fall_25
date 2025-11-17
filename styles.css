@@ -1,0 +1,164 @@
+/* TODO: Make this responsive! */
+body {
+    background-color: cornsilk;
+}
+
+h1 {
+    border-top: 2px solid rosybrown;
+    border-bottom: 2px solid rosybrown;
+    padding: 8px 4px;
+    font-family: Baskerville Old Face,serif;
+    font-size: 2.0em;
+    color: #8d5152;
+    line-height: 1.5em;
+}
+
+img {
+    display: block;
+    width: 30%;
+}
+
+p {
+    margin: 30px;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* mobile */
+@media screen and (min-width: 400px) and (max-width: 900px) {
+    h1 {
+        background-color: #ffe4c4;
+        text-align: center;
+        border-top: 2px solid #8d5152;
+        border-bottom: 2px solid #8d5152;
+    }
+    img {
+        width: 100%;
+    }
+    div > img:nth-child(2), div > img:last-child {
+        display: none;
+    }
+    article > div > p {
+        margin: 8px 10px;
+    }
+    div > p:last-child {
+        margin: 10px 10px;
+    }
+
+    footer {
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header > img {
+        width: 75%;
+        height: 60%;
+    }
+
+    h1 {
+        background-color: #fffef8;
+        border-top: 2px solid #8d5152;
+        border-bottom: 2px solid #8d5152;
+    }
+
+    #sheet > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+
+    #sheet img {
+        width: 100%;
+    }
+
+    article div p {
+        text-align: left;
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin: 20px 20px 10px 60px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin: 10px;
+    }
+    
+}
+
+/* desktop */
+@media screen and (min-width: 1300px) {
+
+    #sheet>div {
+        background-color: #cf585d;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* header > img {
+        width: 60%;
+    } */
+
+    #sheet img {
+        width: 100%;
+    }
+
+    #sheet h1:first-child {
+        background-color: #cf585d;
+        text-align: left;
+        color: whitesmoke;
+        border-top: 2px solid #8d5152;
+        border-bottom: 2px solid #8d5152;
+    }
+
+    article > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        gap: 10px;
+    }
+
+
+    article div p {
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin: 20px;
+    }
+
+
+    footer {
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin: 10px;
+    }
+
+}
