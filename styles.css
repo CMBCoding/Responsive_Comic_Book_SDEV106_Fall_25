@@ -28,7 +28,7 @@ footer {
 }
 
 /* mobile */
-@media screen and (min-width: 400px) and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
     h1 {
         background-color: #ffe4c4;
         text-align: center;
